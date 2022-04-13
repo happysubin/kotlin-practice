@@ -1,15 +1,15 @@
 package chap02.sec01
 
 class MyGenericClass<T>{
-    var userId :T? = null
+    var usrId: T? = null
 }
 
 fun main(){
     val obj1 = MyGenericClass<Int>()
-    obj1.userId = 1234
-    println("obj1.userID : ${obj1.userId}")
-
+    obj1.usrId = 2022001
+    println("obj1.usrId = ${obj1.usrId}")
+    
     val obj2 = MyGenericClass<String>()
-    obj2.userId = "4321"
-    println("obj2.userID : ${obj2.userId}")
+    obj2.usrId="2022001"
+    println("obj2.usrId = ${obj2.usrId}")
 }

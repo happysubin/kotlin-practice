@@ -10,5 +10,11 @@ fun main(){
     obj.usrId="ahn"
     obj.score=100
 
+    val arr : Array<Int> = arrayOf(1,2,3,42)
+
+    for (i in arr) {
+        println("i = ${i}")
+    }
+
     println(" ${obj.usrId},${obj.score}")
 }
