@@ -8,8 +8,8 @@ open class SuperClass {
 }
 
 //SuperClass 상속
-class SubClass : SuperClass(){
-    
+class SubClass(member :String) : SuperClass(){
+    var member : String = member
     override fun supMethod(){
         println("sub method")
     }
@@ -17,7 +17,7 @@ class SubClass : SuperClass(){
 }
 
 fun main(){
-    val c = SubClass()
+    val c = SubClass("super")
     println("c = ${c.supMember}")
     println("c.supMethod() = ${c.supMethod()}")
 }
